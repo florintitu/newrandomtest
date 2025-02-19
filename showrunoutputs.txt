@@ -1,0 +1,144 @@
+[1m[36mshow_command_test***************************************************************[0m
+[0m[1m[34m* AristaRouter ** changed : False **********************************************[0m
+[0m[1m[32mvvvv show_command_test ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv INFO[0m
+[0m[1m[32m---- send_command ** changed : False ------------------------------------------- INFO[0m
+[0m! Command: show running-config
+! device: AristaRouter (vEOS-lab, EOS-4.33.1.1F)
+!
+! boot system flash:/vEOS-lab.swi
+!
+no aaa root
+!
+username euro privilege 15 secret sha512 $6$cC1qj4XG58Fj5dCU$q/TxLal8BkMjuChCvm3Q/9rh1xKMMsUUMO9XxiixEUnqjpUcjwjK3ksSmW/ue5TcG9pJMBqQlggCQrr53bFHA/
+username john privilege 15 secret sha512 $6$peJPnZBzstrgY3LV$VoLxiWhhinJg0.NplQAAnFFcxanGrFy9kCV3s.zJ8xnlq7S9pA.C/Rsz9N5JTaeNwEKXP0ESH9zumVNso2SRz.
+!
+no service interface inactive port-id allocation disabled
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname AristaRouter
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+interface Ethernet1
+!
+interface Ethernet2
+!
+interface Ethernet3
+!
+interface Management1
+   ip address 192.168.232.102/24
+!
+no ip routing
+!
+router multicast
+   ipv4
+      software-forwarding kernel
+   !
+   ipv6
+      software-forwarding kernel
+!
+end[0m
+[0m[1m[32m^^^^ END show_command_test ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m[1m[34m* AristaRouter1 ** changed : False *********************************************[0m
+[0m[1m[32mvvvv show_command_test ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv INFO[0m
+[0m[1m[32m---- send_command ** changed : False ------------------------------------------- INFO[0m
+[0m! Command: show running-config
+! device: AristaRouter1 (vEOS-lab, EOS-4.33.1.1F)
+!
+! boot system flash:/vEOS-lab.swi
+!
+no aaa root
+!
+username john privilege 15 secret sha512 $6$9cXrOC2rp6uZ/IDb$mxqxxFxhio.7yCW9zNV1RPN6E5Eh5bm/N3J/7HXV0gQIFHXImo1yP42P/Mlgl0a2F41NPB6lvc.MOPN3W5YdM0
+username usa privilege 15 secret sha512 $6$ds1ei1dfsQh5DsM3$B2n84dM1X9TRcAv/ICwIfTgwYyZcAhoj3lAZO9PGWAq27thG.6bpGaNneSgsBhkef16McdoXeiyYq75oXNtsV1
+!
+no service interface inactive port-id allocation disabled
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname AristaRouter1
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+interface Ethernet1
+!
+interface Ethernet2
+!
+interface Ethernet3
+!
+interface Management1
+   ip address 192.168.232.103/24
+!
+no ip routing
+!
+router multicast
+   ipv4
+      software-forwarding kernel
+   !
+   ipv6
+      software-forwarding kernel
+!
+end[0m
+[0m[1m[32m^^^^ END show_command_test ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m[1m[34m* AristaRouter2 ** changed : False *********************************************[0m
+[0m[1m[32mvvvv show_command_test ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv INFO[0m
+[0m[1m[32m---- send_command ** changed : False ------------------------------------------- INFO[0m
+[0m! Command: show running-config
+! device: AristaRouter2 (vEOS-lab, EOS-4.33.1.1F)
+!
+! boot system flash:/vEOS-lab.swi
+!
+no aaa root
+!
+username john privilege 15 secret sha512 $6$d7wP3Nn6/allvSVI$IuY198rvhCji6ymegB/pQKFGMEnlaS3ecsoQvfzEx/9jYgCfjcC6qTiuOH2i6yw0HS5ts0x9QboyVdklPPOco/
+username vasile privilege 15 secret sha512 $6$9QurJTf5/FzA0.St$M1J/SGu5hAj5vZ5DsSq8h7oALyiOuETJxfKgdnrVYzlhLYmUL3SVCpHrYXDNjFrNmE/NCZChh7WoaetSERfJA.
+username vasile ssh-key ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAHhKNB5dr8C1dR6a+RexYKUAzHCvWuyWQ4zUDeq0Vb4igxqhC6nEc9KNj4fwamaLx8VqjUgoa8Uog+kGW+AaERsLQDmlRH3O0fjFByNoKHh14Hw4YsB9ZZdNaypb+8Gqczpzp4PGyNwo/T4gSL+Or93b0WtqEApUw8CsuHl/n2cNJlllg== vasile@ipvzero-VMware-Virtual-Platform
+!
+no service interface inactive port-id allocation disabled
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname AristaRouter2
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+interface Ethernet1
+!
+interface Ethernet2
+!
+interface Ethernet3
+!
+interface Management1
+   ip address 192.168.232.204/24
+!
+no ip routing
+!
+router multicast
+   ipv4
+      software-forwarding kernel
+   !
+   ipv6
+      software-forwarding kernel
+!
+end[0m
+[0m[1m[32m^^^^ END show_command_test ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m
